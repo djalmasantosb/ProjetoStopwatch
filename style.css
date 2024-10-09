@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+:root {
+  --primary-color: #033f63;
+  --primary-shade: #05639e;
+  --secondary-color: #e5a78a;
+  --secondary-shade: #f0cdbc;
+  --light-color: #e9f1f7;
+  --body-bg-color: #9cd7fc;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  border: 2px solid var(--light-color);
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+}
+
+button.secondary-button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+button:hover {
+  background-color: var(--secondary-shade);
+}
+
+button.secondary-button:hover {
+  background-color: var(--primary-shade);
+}
+
+button:focus {
+  border: 2px solid #000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: var(--body-bg-color);
+  font-size: 3rem;
+}
+
+#stopwatch-wrapper {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#stopwatch-display {
+  font-family: Arial, Helvetica;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+
+.button-box {
+  margin: 1rem 0 0.5rem 0;
+}
