@@ -73,3 +73,26 @@ body {
 .button-box {
   margin: 1rem 0 0.5rem 0;
 }
+
+.bg-color-start {
+  background-color: #4bbc3b;
+}
+
+.bg-color-start:hover {
+  background-color: #388b2d;
+  color: #fff;
+}
+
+.bg-color-stop {
+  background-color: #c32f27;
+}
+
+.bg-color-stop:hover {
+  background-color: #990100;
+  color: #fff;
+}
+
+.bg-color-reset:hover {
+  background-color: lightskyblue;
+  color: #fff;
+}

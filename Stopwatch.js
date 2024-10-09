@@ -60,17 +60,18 @@ const sw1 = new Stopwatch();
 
 startBtn.addEventListener('click', () => {
   sw1.start(updateDisplay);
-  startBtn.style.backgroundColor = '#38b000';
-  stopBtn.style.backgroundColor = '#033f63';
-  resetBtn.style.backgroundColor = '#e5a78a';
+  startBtn.classList.add('bg-color-start');
+  stopBtn.classList.remove('bg-color-stop');
+  resetBtn.classList.remove('bg-color-reset');
 });
 stopBtn.addEventListener('click', () => {
   sw1.stop();
-  startBtn.style.backgroundColor = '#e5a78a';
-  stopBtn.style.backgroundColor = '#c1121f';
-  resetBtn.style.backgroundColor = '#e5a78a';
+
+  startBtn.classList.remove('bg-color-start');
+  stopBtn.classList.remove('secondary-button');
+  stopBtn.classList.add('bg-color-stop');
 });
 resetBtn.addEventListener('click', () => {
   sw1.reset(updateDisplay);
-  resetBtn.style.backgroundColor = '#05639e';
+  resetBtn.classList.add('bg-color-reset');
 });
