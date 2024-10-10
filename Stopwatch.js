@@ -70,6 +70,7 @@ stopBtn.addEventListener('click', () => {
   sw1.stop();
   startBtn.classList.remove('bg-color-start');
   stopBtn.classList.remove('secondary-button');
+  resetBtn.classList.remove('bg-color-reset');
   stopBtn.classList.add('bg-color-stop');
 });
 
