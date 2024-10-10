@@ -77,4 +77,6 @@ stopBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
   sw1.reset(updateDisplay);
   resetBtn.classList.add('bg-color-reset');
+  stopBtn.classList.add('secondary-button');
+  stopBtn.classList.remove('bg-color-stop');
 });
