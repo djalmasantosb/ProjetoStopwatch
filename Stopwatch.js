@@ -61,16 +61,18 @@ const sw1 = new Stopwatch();
 startBtn.addEventListener('click', () => {
   sw1.start(updateDisplay);
   startBtn.classList.add('bg-color-start');
+  stopBtn.classList.add('secondary-button');
   stopBtn.classList.remove('bg-color-stop');
   resetBtn.classList.remove('bg-color-reset');
 });
+
 stopBtn.addEventListener('click', () => {
   sw1.stop();
-
   startBtn.classList.remove('bg-color-start');
   stopBtn.classList.remove('secondary-button');
   stopBtn.classList.add('bg-color-stop');
 });
+
 resetBtn.addEventListener('click', () => {
   sw1.reset(updateDisplay);
   resetBtn.classList.add('bg-color-reset');
